@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.8);
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header .search {
+  flex-basis: 700px;
+}
+@media screen and (max-width: 610px) {
+  header .search {
+    display: none;
+  }
+}
