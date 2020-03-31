@@ -1,0 +1,20 @@
+.option-info {
+  width: 250px;
+  justify-content: flex-end;
+}
+.option-info .icon-img {
+  flex: 0 1 0;
+}
+.option-info .icon-img:first-child:hover {
+  padding: 7.2px;
+  margin: 0 2.8px 0 7.8px;
+}
+.account img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.option-info .account:hover {
+  background-color: transparent;
+  padding: 10px;
+}
