@@ -1,9 +1,6 @@
 * {
   padding: 0;
 }
-body {
-  padding-top: 100px;
-}
 .contain-item {
   display: flex;
   width: 200px;

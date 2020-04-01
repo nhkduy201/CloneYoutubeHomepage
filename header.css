@@ -1,6 +1,6 @@
 header {
   display: flex;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   justify-content: space-between;
   align-items: center;
   position: fixed;
@@ -13,6 +13,11 @@ header .search {
 }
 @media screen and (max-width: 610px) {
   header .search {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  header .option-info .option {
     display: none;
   }
 }
