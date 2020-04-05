@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+.wrapper {
+  margin-top: 64px;
+  display: flex;
+}
+.wrapper > div {
+  height: 820px;
+  overflow: hidden;
+}
+.wrapper > div:hover {
+  overflow-y: scroll;
+}
+.side-bar {
+  flex: 0 1 200px;
+}
+
+.main-content {
+  flex: 1 1;
+  background-color: #eee;
+}
+
+@media screen and (max-width: 480px) {
+  .side-bar {
+    display: none;
+  }
+}
