@@ -8,10 +8,16 @@ header {
   left: 0;
   width: 100%;
 }
+header .contain-item {
+  flex-shrink: 0;
+}
+header .option-info {
+  flex-shrink: 1;
+}
 header .search {
   flex-basis: 700px;
 }
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 690px) {
   header .search {
     display: none;
   }
@@ -19,5 +25,8 @@ header .search {
 @media screen and (max-width: 480px) {
   header .option-info .option {
     display: none;
+  }
+  header .contain-item {
+    flex-shrink: 1;
   }
 }

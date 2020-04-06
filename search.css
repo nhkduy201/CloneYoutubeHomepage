@@ -1,7 +1,7 @@
 .search {
   display: flex;
   position: relative;
-  max-width: 700px;
+  min-width: 300px;
 }
 .search-input,
 .search-btn {

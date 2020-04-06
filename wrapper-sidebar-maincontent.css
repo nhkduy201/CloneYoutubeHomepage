@@ -2,11 +2,12 @@ body {
   margin: 0;
 }
 .wrapper {
-  margin-top: 64px;
+  padding-top: 64px;
+  box-sizing: border-box;
   display: flex;
+  height: 100vh;
 }
 .wrapper > div {
-  height: 820px;
   overflow: hidden;
 }
 .wrapper > div:hover {

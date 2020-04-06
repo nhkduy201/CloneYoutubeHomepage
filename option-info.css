@@ -2,12 +2,9 @@
   width: 250px;
   justify-content: flex-end;
 }
-.option-info .icon-img {
-  flex: 0 1 0;
-}
-.option-info .icon-img:first-child:hover {
-  padding: 7.2px;
-  margin: 0 2.8px 0 7.8px;
+.option-info .icon-img:hover {
+  background-color: #ccc;
+  border-radius: 50%;
 }
 .account img {
   object-fit: cover;
@@ -17,5 +14,4 @@
 }
 .option-info .account:hover {
   background-color: transparent;
-  padding: 10px;
 }
