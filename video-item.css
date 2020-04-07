@@ -1,0 +1,62 @@
+body {
+  padding: 10px;
+}
+.video-item {
+  display: inline-block;
+  width: 32vh;
+}
+
+.video-item > a {
+  display: block;
+}
+.video-img {
+  height: 18vh;
+  background-image: url("https://picsum.photos/300/180");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #fff;
+}
+.video-img div i,
+.video-img .time {
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.video-item div i {
+  padding: 5px;
+}
+.video-img .time {
+  padding: 1px 2px;
+}
+.video-img .add-to-queue {
+  flex-grow: 1;
+}
+.video-info {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  align-items: flex-start;
+}
+.video-info .poster-img img {
+  border-radius: 50%;
+}
+.video-info .specific-info {
+  margin: 0 10px;
+}
+.video-info .specific-info .title {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.video-info .specific-info .channel-name {
+  margin: 5px 0 0 0;
+}
+.video-info .specific-info .view-publish-time {
+  margin: 0;
+}
+.video-info .more-option {
+  padding: 0 5px;
+  color: #aaa;
+}
