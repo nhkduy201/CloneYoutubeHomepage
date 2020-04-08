@@ -1,16 +1,5 @@
-body {
-  padding: 10px;
-}
-.video-item {
-  display: inline-block;
-  width: 32vh;
-}
-
-.video-item > a {
-  display: block;
-}
 .video-img {
-  height: 18vh;
+  height: 160px;
   background-image: url("https://picsum.photos/300/180");
   background-size: cover;
   background-position: center;
@@ -18,6 +7,11 @@ body {
   flex-direction: column;
   align-items: flex-end;
   color: #fff;
+}
+.video-item:hover .video-img .watch-later,
+.video-item:hover .video-img .add-to-queue,
+.video-item:hover .video-info .more-option {
+  visibility: visible;
 }
 .video-img div i,
 .video-img .time {
@@ -33,11 +27,16 @@ body {
 .video-img .add-to-queue {
   flex-grow: 1;
 }
+.video-img .watch-later,
+.video-img .add-to-queue {
+  visibility: hidden;
+}
 .video-info {
   display: flex;
   flex-direction: row;
   padding-top: 10px;
   align-items: flex-start;
+  justify-content: space-between;
 }
 .video-info .poster-img img {
   border-radius: 50%;
@@ -59,4 +58,5 @@ body {
 .video-info .more-option {
   padding: 0 5px;
   color: #aaa;
+  visibility: hidden;
 }

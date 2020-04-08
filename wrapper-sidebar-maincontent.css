@@ -2,27 +2,39 @@ body {
   margin: 0;
 }
 .wrapper {
-  padding-top: 64px;
+  /* padding-top: 64px; */
   box-sizing: border-box;
   display: flex;
   height: 100vh;
 }
-.wrapper > div {
+.side-bar {
   overflow: hidden;
 }
-.wrapper > div:hover {
+.side-bar:hover,
+.main-content {
   overflow-y: scroll;
 }
 .side-bar {
   flex: 0 1 200px;
+  margin-top: 64px;
 }
 
 .main-content {
+  display: flex;
   flex: 1 1;
   background-color: #eee;
+  flex-wrap: wrap;
+  padding: 74px 0 10px 0;
+  justify-content: center;
+}
+.main-content .video-item {
+  flex: 1 1 0;
+  min-width: 260px;
+  max-width: 400px;
+  margin: 0 10px 10px 10px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .side-bar {
     display: none;
   }
