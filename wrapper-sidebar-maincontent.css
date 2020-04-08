@@ -9,16 +9,50 @@ body {
 }
 .side-bar {
   overflow: hidden;
+  flex: 0 1 220px;
+  margin-top: 64px;
+}
+.side-bar::-webkit-scrollbar {
+  width: 7px;
+}
+.main-content::-webkit-scrollbar {
+  width: 15px;
+}
+.side-bar::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+.main-content::-webkit-scrollbar-track {
+  background: #ccc;
+}
+.main-content::-webkit-scrollbar-thumb {
+  background: #aaa;
 }
 .side-bar:hover,
 .main-content {
   overflow-y: scroll;
 }
-.side-bar {
-  flex: 0 1 200px;
-  margin-top: 64px;
+.side-bar hr {
+  border-top: 1px solid #ddd;
 }
-
+.side-bar .title-category {
+  padding: 10px 20px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.1px;
+  color: #555;
+}
+.side-bar .policy {
+  padding: 0 30px 30px 20px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #777;
+}
+.side-bar .copyright {
+  padding-left: 20px;
+  font-size: 0.9em;
+  color: #999;
+}
 .main-content {
   display: flex;
   flex: 1 1;
